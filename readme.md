@@ -7,12 +7,14 @@ npm i fek
 ```
 
 ## Usage
+
 ```javascript
 var test = require('tape')
 var fake = require('fek')
 
 test('spy', function (t) {
-  t.plan(3)
+  t.plan(4)
+  // spy
   var f = fake(function (x) {
     return x * 2
   })
@@ -22,6 +24,13 @@ test('spy', function (t) {
   t.equal(f.callCount(), 1, 'it was called once')
   t.deepEqual(f.lastArgs(), [2], 'with 2 as argument')
   t.equal(f.lastCall().returned, 4, 'returned 4')
+
+  // or fake
+  var f = fake()
+
+  f()
+
+  t.equal(f.callCount(), 1, 'it was called once')
 })
 ```
 
