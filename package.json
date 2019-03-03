@@ -1,6 +1,6 @@
 {
   "name": "fek",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "One ridiculously simple function to fake and spy",
   "main": "index.js",
   "scripts": {
