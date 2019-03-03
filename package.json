@@ -1,0 +1,24 @@
+{
+  "name": "fek",
+  "version": "0.0.0",
+  "description": "One ridiculously simple function to fake and spy",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/kodedninja/fek"
+  },
+  "keywords": [
+    "fake",
+    "spy",
+    "mock"
+  ],
+  "author": "kodedninja",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tape": "^4.10.1"
+  }
+}
